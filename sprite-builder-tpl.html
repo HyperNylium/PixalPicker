@@ -1,0 +1,24 @@
+
+
+
+<form class="form-horizontal" name="spriteBuilder">
+  <div class="form-group">
+    <label for="spriteName" class="col-xs-4 control-label fix-2">Sprite name</label>
+    <div class="col-xs-4">
+      <input id="spriteName" class="form-control" ng-model="spriteName" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label fix">Sprite LEDs</label>
+    <span class="help-inline">Click the button grid to get started</span>
+    <table>
+      <tr ng-repeat="row in matrix">
+        <td ng-repeat="col in row"><button class="btn btn-default" ng-class="{'btn-danger': col.value=='1'}" ng-click="setVal(col)">{{col.value}}</button></td>
+      </tr>
+    </table>
+  </div>
+  <div class="form-group">
+    <button ng-click="reset()" class="btn custom center-2">CLEAR</button>
+  </div>
+
+</form>
