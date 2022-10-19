@@ -1,1 +1,1 @@
-#Sprite Generator For LED Matrix 8x8
+Sprite Generator For LED Matrix 8x8
